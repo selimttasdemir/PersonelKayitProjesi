@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="PersonelKayıtProjesi.Site1" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 202px;
+            height: 56px;
+        }
+        .auto-style2 {
+            width: 202px;
+            height: 456px;
+            margin-left: 40px;
+        }
+        .auto-style3 {
+            height: 456px;
+        }
+        .auto-style4 {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .auto-style5 {
+            height: 56px;
+        }
+    </style>
+</head>
+<body style="height: 610px">
+    <form id="form1" runat="server">
+    <div>
+ <table class="auto-style4">
+ <tr>
+ <td bgcolor="#FFCCFF" class="auto-style1" style="border: medium solid #03293C; background-position: center center; background-color: #05384e; background-attachment: fixed; background-repeat: no-repeat; color: #FFFFFF; font-size: large;">
+     &nbsp; Personel Kayıt Otomasyonu<br />
+ </td>
+<td bgcolor="#99CCFF" class="auto-style5" style="border: medium solid #03293C; background-color: #032134; color: #FFFFFF;">
+    <marquee direction=right>ANA SAYFA</marquee></td>
+ </tr>
+<tr>
+ <td bgcolor="#FF9933" class="auto-style2" style="border: medium solid #03293C; background-color: #064b5f">
+ <br />
+ <br />
+ <br />
+ <asp:HyperLink ID="HyperLink2" runat="server"
+NavigateUrl="~/index.aspx" Font-Bold="True" Font-Italic="True" ForeColor="#009999">ANA
+ SAYFA</asp:HyperLink>
+ <br />
+ <br />
+     <asp:LinkButton ID="lnkperkayit" runat="server" PostBackUrl="~/personel-ekleme.aspx" Font-Bold="True" Font-Italic="True" ForeColor="#009999">Personel Kayıt</asp:LinkButton>
+     <br />
+     <br />
+     <asp:LinkButton ID="lnkperbul" runat="server" PostBackUrl="~/personel-bul.aspx" Font-Bold="True" Font-Italic="True" ForeColor="#009999">Personel Bul</asp:LinkButton>
+     <br />
+     <br />
+     <asp:LinkButton ID="lnkperguncelle" runat="server" PostBackUrl="~/personel-guncelle.aspx" Font-Bold="True" Font-Italic="True" ForeColor="#009999">Personel Güncelle</asp:LinkButton>
+     <br />
+     <br />
+     <asp:LinkButton ID="lnkperlistele" runat="server" PostBackUrl="~/personel-listele.aspx" Font-Bold="True" Font-Italic="True" ForeColor="#009999">Personel Listele</asp:LinkButton>
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+     <br />
+    
+    <asp:TextBox ID="txtKullanici" runat="server" Height="25px"  Width="210px">admin</asp:TextBox>
+    <asp:TextBox ID="txtSifre" runat="server" Height="25px"  Width="210px" TextMode="Password">Şifre</asp:TextBox>
+    
+     <asp:Button ID="Button1" runat="server" Height="43px" OnClick="Button1_Click" Text="GİRİŞ" Width="75px" />
+     <asp:Label ID="lblMesaj" runat="server"></asp:Label>
+     <br />
+ <br />
+ <br />
+ <br />
+ <br />
+ </td>
+<td class="auto-style3" style="border: medium solid #032134; background-position: center; background-image: url('/resimler/arkaplan.png'); background-attachment: fixed; background-repeat: repeat; background-color: #BAD6FD; font-family: Corbel; font-size: medium; color: #FFFFFF;">
+ <asp:ContentPlaceHolder id="ContentPlaceHolder1"
+runat="server">
+
+ &nbsp;
+ </asp:ContentPlaceHolder>
+ </td>
+ </tr>
+ </table>
+    </div>
+    <h1 id="sp-title" class="title r-onepp-title" style="margin: 0px 20px 0px 0px; padding: 0px; -webkit-tap-highlight-color: transparent; font-family: Roboto, Arial, Helvetica, sans-serif; font-size: 22px; outline: none 0px; line-height: 24px; color: rgb(51, 51, 51); font-weight: 500; white-space: normal; text-overflow: inherit; overflow: inherit; display: block; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</h1>
+    </form>
+</body>
+</html>
